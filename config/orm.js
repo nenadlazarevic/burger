@@ -81,7 +81,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     }
-};
+    };
 
 // Export the orm object for the model (cat.js).
 module.exports = orm;
