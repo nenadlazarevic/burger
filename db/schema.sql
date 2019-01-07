@@ -1,15 +1,13 @@
 drop database if exists burgers_db;
 
-create database  burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-use  burgers_db;
-
-create table burgers (
-
-id int(10) not null auto_increment,
-burger_name varchar(30) not null,
-devoured boolean,
-primary key (id)
-
-
+CREATE TABLE burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
 );
