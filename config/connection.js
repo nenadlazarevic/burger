@@ -1,5 +1,5 @@
 var mysql = require("mysql");
-JAWSDB_URL="mysql://enpd2xf71o33y8nj:bshlei3g0z1p5ehy@sp6xl8zoyvbumaa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/obnxso4ks83j5yde"
+require('dotenv').config()
 
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
